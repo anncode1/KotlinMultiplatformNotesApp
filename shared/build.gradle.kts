@@ -42,7 +42,7 @@ kotlin {
         }
         val androidMain by getting {
             dependencies {
-                implementation("com.squareup.sqldelight:runtime:1.5.5")
+                implementation("com.squareup.sqldelight:android-driver:1.5.5")
             }
         }
         val androidUnitTest by getting
@@ -51,7 +51,7 @@ kotlin {
         val iosSimulatorArm64Main by getting
         val iosMain by creating {
             dependencies {
-                implementation("com.squareup.sqldelight:runtime:1.5.5")
+                implementation("com.squareup.sqldelight:native-driver:1.5.5")
             }
 
             dependsOn(commonMain)
